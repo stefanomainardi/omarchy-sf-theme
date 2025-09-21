@@ -46,33 +46,31 @@ Purple | `#CD0089` | rgb(205, 0, 137) | Highlights
 
 ## Installation
 
-### Prerequisites
-- Omarchy Linux
-- chezmoi (for dotfiles management)
-
-### Quick Install
+### One-Command Install (Recommended)
 ```bash
-# Clone the theme
-git clone https://github.com/stefanomainardi/spark-omarchy-theme ~/.local/share/omarchy/themes/spark-omarchy
+omarchy-theme-install https://github.com/stefanomainardi/omarchy-sf-theme
+```
+
+This will automatically:
+- Download the theme to the correct location
+- Create necessary symlinks
+- Install the VSCode extension
+- Apply the theme across all supported applications
+
+### Manual Installation
+```bash
+# Clone the theme manually
+git clone https://github.com/stefanomainardi/omarchy-sf-theme ~/.local/share/omarchy/themes/spark-omarchy
 
 # Create symlink
 ln -sf ~/.local/share/omarchy/themes/spark-omarchy ~/.config/omarchy/themes/spark-omarchy
 
-# Apply theme (varies by Omarchy setup)
-omarchy-theme spark-omarchy
-```
-
-### Manual Setup
-```bash
-# Copy theme files to your system
-cp -r spark-omarchy/* ~/.local/share/omarchy/themes/spark-omarchy/
-
-# Link individual configs as needed
-ln -sf ~/.local/share/omarchy/themes/spark-omarchy/kitty.conf ~/.config/kitty/
-ln -sf ~/.local/share/omarchy/themes/spark-omarchy/waybar.css ~/.config/waybar/
-
-# Install VSCode extension (survives system updates)
+# Install VSCode extension
+cd ~/.local/share/omarchy/themes/spark-omarchy
 ./install-vscode.sh
+
+# Apply theme
+omarchy-theme-set spark-omarchy
 ```
 
 ### VSCode Extension
