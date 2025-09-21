@@ -38,6 +38,7 @@ Purple | `#CD0089` | rgb(205, 0, 137) | Highlights
 ## Themed Applications
 
 - **Kitty Terminal**: Full Sparkfabrik color scheme with branded borders
+- **Ghostty Terminal**: Complete color palette with Sparkfabrik identity
 - **Waybar**: Corporate color variables for professional status bar
 - **Hyprland**: Bold red active borders with blue inactive states
 - **Mako Notifications**: Branded notification styling
