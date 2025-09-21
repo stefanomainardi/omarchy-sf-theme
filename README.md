@@ -70,7 +70,26 @@ cp -r spark-omarchy/* ~/.local/share/omarchy/themes/spark-omarchy/
 # Link individual configs as needed
 ln -sf ~/.local/share/omarchy/themes/spark-omarchy/kitty.conf ~/.config/kitty/
 ln -sf ~/.local/share/omarchy/themes/spark-omarchy/waybar.css ~/.config/waybar/
+
+# Install VSCode extension (survives system updates)
+./install-vscode.sh
 ```
+
+### VSCode Extension
+
+The theme includes a complete VSCode extension that survives system updates:
+
+```bash
+# Install VSCode extension manually
+cd ~/.local/share/omarchy/themes/spark-omarchy
+./install-vscode.sh
+
+# The extension will appear in VSCode's theme dropdown as "Spark Omarchy"
+# Or use Omarchy's automatic integration:
+omarchy-theme-set spark-omarchy
+```
+
+**Post-Update Recovery**: If system updates remove the VSCode extension, simply run `./install-vscode.sh` again.
 
 ## Background Recommendations
 
