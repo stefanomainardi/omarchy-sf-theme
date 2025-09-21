@@ -1,76 +1,78 @@
+# Spark Omarchy theme for Alacritty
+# Based on Sparkfabrik Design System
+
 [colors.primary]
-background = "#24273a"
-foreground = "#cad3f5"
-dim_foreground = "#8087a2"
-bright_foreground = "#cad3f5"
+background = "#031527"  # Spark Black
+foreground = "#FFFFFF"  # Spark White
+dim_foreground = "#027ACA"  # Spark Light Blue
+bright_foreground = "#FFFFFF"
 
 [colors.cursor]
-text = "#24273a"
-cursor = "#f4dbd6"
+text = "#FFFFFF"
+cursor = "#EB0000"  # Spark Red
 
 [colors.vi_mode_cursor]
-text = "#24273a"
-cursor = "#b7bdf8"
+text = "#FFFFFF"
+cursor = "#EB0000"
 
 [colors.search.matches]
-foreground = "#24273a"
-background = "#a5adcb"
+foreground = "#031527"
+background = "#F7AD2C"  # Spark Yellow
 
 [colors.search.focused_match]
-foreground = "#24273a"
-background = "#a6da95"
+foreground = "#FFFFFF"
+background = "#EB0000"  # Spark Red
 
 [colors.footer_bar]
-foreground = "#24273a"
-background = "#a5adcb"
+foreground = "#FFFFFF"
+background = "#0C335A"  # Spark Blue
 
 [colors.hints.start]
-foreground = "#24273a"
-background = "#eed49f"
+foreground = "#031527"
+background = "#F7AD2C"  # Spark Yellow
 
 [colors.hints.end]
-foreground = "#24273a"
-background = "#a5adcb"
+foreground = "#FFFFFF"
+background = "#0C335A"
 
 [colors.selection]
-text = "#24273a"
-background = "#f4dbd6"
+text = "#FFFFFF"
+background = "#EB0000"  # Spark Red
 
 [colors.normal]
-black = "#494d64"
-red = "#ed8796"
-green = "#a6da95"
-yellow = "#eed49f"
-blue = "#8aadf4"
-magenta = "#f5bde6"
-cyan = "#8bd5ca"
-white = "#b8c0e0"
+black = "#031527"    # Spark Black
+red = "#EB0000"      # Spark Red
+green = "#008844"    # Spark Dark Green
+yellow = "#F7AD2C"   # Spark Yellow
+blue = "#027ACA"     # Spark Light Blue
+magenta = "#8D1971"  # Spark Dark Purple
+cyan = "#40C6CF"     # Spark Aquamarine
+white = "#FFFFFF"    # Spark White
 
 [colors.bright]
-black = "#5b6078"
-red = "#ed8796"
-green = "#a6da95"
-yellow = "#eed49f"
-blue = "#8aadf4"
-magenta = "#f5bde6"
-cyan = "#8bd5ca"
-white = "#a5adcb"
+black = "#0C335A"    # Spark Blue
+red = "#F36931"      # Spark Orange
+green = "#68D366"    # Spark Lime
+yellow = "#F7AD2C"   # Spark Yellow
+blue = "#40C6CF"     # Spark Aquamarine
+magenta = "#CD0089"  # Spark Purple
+cyan = "#027ACA"     # Spark Light Blue
+white = "#FFFFFF"    # Spark White
 
 [colors.dim]
-black = "#494d64"
-red = "#ed8796"
-green = "#a6da95"
-yellow = "#eed49f"
-blue = "#8aadf4"
-magenta = "#f5bde6"
-cyan = "#8bd5ca"
-white = "#b8c0e0"
+black = "#031527"
+red = "#EB0000"
+green = "#008844"
+yellow = "#F7AD2C"
+blue = "#027ACA"
+magenta = "#8D1971"
+cyan = "#40C6CF"
+white = "#FFFFFF"
 
 [[colors.indexed_colors]]
 index = 16
-color = "#f5a97f"
+color = "#F36931"  # Spark Orange
 
 [[colors.indexed_colors]]
 index = 17
-color = "#f4dbd6"
-
+color = "#CD0089"  # Spark Purple
