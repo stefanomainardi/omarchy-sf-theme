@@ -1,0 +1,80 @@
+#!/bin/bash
+
+# Toggle Screensaver Logo - Switch between Omarchy and Spark logos
+# Part of Spark-Omarchy theme screensaver system
+
+SCREENSAVER_MODE_FILE="$HOME/.config/screensaver-mode"
+
+# Function to show current mode
+show_current_mode() {
+    if [[ -f "$SCREENSAVER_MODE_FILE" ]]; then
+        CURRENT_MODE=$(cat "$SCREENSAVER_MODE_FILE")
+    else
+        CURRENT_MODE="omarchy"
+    fi
+    echo "Current screensaver mode: $CURRENT_MODE"
+}
+
+# Function to set mode
+set_mode() {
+    local mode="$1"
+    if [[ "$mode" == "spark" || "$mode" == "omarchy" ]]; then
+        echo "$mode" > "$SCREENSAVER_MODE_FILE"
+        echo "✓ Screensaver mode set to: $mode"
+
+        # Show notification if notify-send is available
+        if command -v notify-send &>/dev/null; then
+            if [[ "$mode" == "spark" ]]; then
+                notify-send "Screensaver" "Switched to Spark logo" -i "preferences-desktop-screensaver"
+            else
+                notify-send "Screensaver" "Switched to Omarchy logo" -i "preferences-desktop-screensaver"
+            fi
+        fi
+    else
+        echo "Error: Invalid mode '$mode'. Use 'spark' or 'omarchy'"
+        exit 1
+    fi
+}
+
+# Function to toggle mode
+toggle_mode() {
+    if [[ -f "$SCREENSAVER_MODE_FILE" ]]; then
+        CURRENT_MODE=$(cat "$SCREENSAVER_MODE_FILE")
+    else
+        CURRENT_MODE="omarchy"
+    fi
+
+    if [[ "$CURRENT_MODE" == "spark" ]]; then
+        set_mode "omarchy"
+    else
+        set_mode "spark"
+    fi
+}
+
+# Main logic
+case "$1" in
+    "spark"|"omarchy")
+        set_mode "$1"
+        ;;
+    "status")
+        show_current_mode
+        ;;
+    ""|"toggle")
+        toggle_mode
+        ;;
+    "help"|"--help"|"-h")
+        echo "Toggle Screensaver Logo - Spark-Omarchy Theme"
+        echo ""
+        echo "Usage:"
+        echo "  $0                 # Toggle between modes"
+        echo "  $0 spark          # Set to Spark logo"
+        echo "  $0 omarchy        # Set to Omarchy logo"
+        echo "  $0 status         # Show current mode"
+        echo "  $0 help           # Show this help"
+        ;;
+    *)
+        echo "Error: Unknown option '$1'"
+        echo "Use '$0 help' for usage information"
+        exit 1
+        ;;
+esac

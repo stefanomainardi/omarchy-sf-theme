@@ -1,0 +1,48 @@
+#!/bin/bash
+
+# Smart Screensaver Launcher for Spark-Omarchy Theme
+# Switches between Omarchy default and Spark custom logo
+
+# Exit early if we don't have the tte show
+if ! command -v tte &>/dev/null; then
+  exit 1
+fi
+
+# Exit early if screensaver is already running
+pgrep -f "alacritty --class Screensaver" && exit 0
+
+# Allow screensaver to be turned off but also force started
+if [[ -f ~/.local/state/omarchy/toggles/screensaver-off ]] && [[ $1 != "force" ]]; then
+  exit 1
+fi
+
+# Read current screensaver mode (default to omarchy if file doesn't exist)
+SCREENSAVER_MODE_FILE="$HOME/.config/screensaver-mode"
+if [[ -f "$SCREENSAVER_MODE_FILE" ]]; then
+  CURRENT_MODE=$(cat "$SCREENSAVER_MODE_FILE")
+else
+  CURRENT_MODE="omarchy"
+fi
+
+# Set the appropriate screensaver command based on mode
+THEME_DIR="$HOME/.local/share/omarchy/themes/spark-omarchy"
+if [[ "$CURRENT_MODE" == "spark" ]]; then
+  SCREENSAVER_CMD="$THEME_DIR/screensaver/spark-screensaver-cmd"
+else
+  # Use original Omarchy screensaver
+  SCREENSAVER_CMD="omarchy-cmd-screensaver"
+fi
+
+focused=$(hyprctl monitors -j | jq -r '.[] | select(.focused == true).name')
+
+for m in $(hyprctl monitors -j | jq -r '.[] | .name'); do
+  hyprctl dispatch focusmonitor $m
+
+  # FIXME: Find a way to make this generic where we it can work for kitty + ghostty
+  hyprctl dispatch exec -- \
+    alacritty --class Screensaver \
+    --config-file ~/.local/share/omarchy/default/alacritty/screensaver.toml \
+    -e "$SCREENSAVER_CMD"
+done
+
+hyprctl dispatch focusmonitor $focused
