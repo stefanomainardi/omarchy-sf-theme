@@ -1,83 +1,86 @@
+# Spark Omarchy btop theme
+# Based on Sparkfabrik Design System
+
 # Main background, empty for terminal default, need to be empty if you want transparent background
-theme[main_bg]="#24273a"
+theme[main_bg]="#031527"
 
 # Main text color
-theme[main_fg]="#c6d0f5"
+theme[main_fg]="#FFFFFF"
 
 # Title color for boxes
-theme[title]="#c6d0f5"
+theme[title]="#FFFFFF"
 
 # Highlight color for keyboard shortcuts
-theme[hi_fg]="#8caaee"
+theme[hi_fg]="#EB0000"
 
 # Background color of selected item in processes box
-theme[selected_bg]="#51576d"
+theme[selected_bg]="#0C335A"
 
 # Foreground color of selected item in processes box
-theme[selected_fg]="#8caaee"
+theme[selected_fg]="#FFFFFF"
 
 # Color of inactive/disabled text
-theme[inactive_fg]="#838ba7"
+theme[inactive_fg]="#027ACA"
 
 # Color of text appearing on top of graphs, i.e uptime and current network graph scaling
-theme[graph_text]="#f2d5cf"
+theme[graph_text]="#FFFFFF"
 
 # Background color of the percentage meters
-theme[meter_bg]="#51576d"
+theme[meter_bg]="#0C335A"
 
 # Misc colors for processes box including mini cpu graphs, details memory graph and details status text
-theme[proc_misc]="#f2d5cf"
+theme[proc_misc]="#FFFFFF"
 
 # CPU, Memory, Network, Proc box outline colors
-theme[cpu_box]="#ca9ee6" #Mauve
-theme[mem_box]="#a6d189" #Green
-theme[net_box]="#ea999c" #Maroon
-theme[proc_box]="#8caaee" #Blue
+theme[cpu_box]="#EB0000"     # Spark Red
+theme[mem_box]="#68D366"     # Spark Lime Green
+theme[net_box]="#40C6CF"     # Spark Aquamarine
+theme[proc_box]="#027ACA"    # Spark Light Blue
 
 # Box divider line and small boxes line color
-theme[div_line]="#737994"
+theme[div_line]="#0C335A"
 
 # Temperature graph color (Green -> Yellow -> Red)
-theme[temp_start]="#a6d189"
-theme[temp_mid]="#e5c890"
-theme[temp_end]="#e78284"
+theme[temp_start]="#68D366"  # Spark Lime
+theme[temp_mid]="#F7AD2C"    # Spark Yellow
+theme[temp_end]="#EB0000"    # Spark Red
 
-# CPU graph colors (Teal -> Lavender)
-theme[cpu_start]="#81c8be"
-theme[cpu_mid]="#85c1dc"
-theme[cpu_end]="#babbf1"
+# CPU graph colors (Blue -> Aqua -> Light Blue)
+theme[cpu_start]="#0C335A"   # Spark Blue
+theme[cpu_mid]="#027ACA"     # Spark Light Blue
+theme[cpu_end]="#40C6CF"     # Spark Aquamarine
 
-# Mem/Disk free meter (Mauve -> Lavender -> Blue)
-theme[free_start]="#ca9ee6"
-theme[free_mid]="#babbf1"
-theme[free_end]="#8caaee"
+# Mem/Disk free meter (Purple -> Pink -> Red)
+theme[free_start]="#8D1971"  # Spark Dark Purple
+theme[free_mid]="#CD0089"    # Spark Purple
+theme[free_end]="#EB0000"    # Spark Red
 
-# Mem/Disk cached meter (Sapphire -> Lavender)
-theme[cached_start]="#85c1dc"
-theme[cached_mid]="#8caaee"
-theme[cached_end]="#babbf1"
+# Mem/Disk cached meter (Aqua -> Light Blue)
+theme[cached_start]="#40C6CF" # Spark Aquamarine
+theme[cached_mid]="#027ACA"   # Spark Light Blue
+theme[cached_end]="#0C335A"   # Spark Blue
 
-# Mem/Disk available meter (Peach -> Red)
-theme[available_start]="#ef9f76"
-theme[available_mid]="#ea999c"
-theme[available_end]="#e78284"
+# Mem/Disk available meter (Orange -> Red)
+theme[available_start]="#F7AD2C"  # Spark Yellow
+theme[available_mid]="#F36931"    # Spark Orange
+theme[available_end]="#EB0000"    # Spark Red
 
-# Mem/Disk used meter (Green -> Sky)
-theme[used_start]="#a6d189"
-theme[used_mid]="#81c8be"
-theme[used_end]="#99d1db"
+# Mem/Disk used meter (Green -> Aqua)
+theme[used_start]="#008844"   # Spark Dark Green
+theme[used_mid]="#68D366"     # Spark Lime
+theme[used_end]="#40C6CF"     # Spark Aquamarine
 
-# Download graph colors (Peach -> Red)
-theme[download_start]="#ef9f76"
-theme[download_mid]="#ea999c"
-theme[download_end]="#e78284"
+# Download graph colors (Orange -> Red)
+theme[download_start]="#F7AD2C"  # Spark Yellow
+theme[download_mid]="#F36931"    # Spark Orange
+theme[download_end]="#EB0000"    # Spark Red
 
-# Upload graph colors (Green -> Sky)
-theme[upload_start]="#a6d189"
-theme[upload_mid]="#81c8be"
-theme[upload_end]="#99d1db"
+# Upload graph colors (Green -> Aqua)
+theme[upload_start]="#008844"    # Spark Dark Green
+theme[upload_mid]="#68D366"      # Spark Lime
+theme[upload_end]="#40C6CF"      # Spark Aquamarine
 
-# Process box color gradient for threads, mem and cpu usage (Sapphire -> Mauve)
-theme[process_start]="#85c1dc"
-theme[process_mid]="#babbf1"
-theme[process_end]="#ca9ee6"
+# Process box color gradient for threads, mem and cpu usage (Blue -> Purple -> Red)
+theme[process_start]="#027ACA"   # Spark Light Blue
+theme[process_mid]="#CD0089"     # Spark Purple
+theme[process_end]="#EB0000"     # Spark Red
