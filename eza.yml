@@ -84,12 +84,12 @@ file_type:
   music: {foreground: "#68D366"}
   lossless: {foreground: "#40C6CF"}
   crypto: {foreground: "#8D1971"}
-  document: {foreground: "#FFFFFF"}
+  document: {foreground: "#40C6CF"}
   compressed: {foreground: "#CD0089"}
   temp: {foreground: "#F36931"}
-  compiled: {foreground: "#027ACA"}
-  build: {foreground: "#0C335A"}
-  source: {foreground: "#027ACA"}
+  compiled: {foreground: "#40C6CF"}
+  build: {foreground: "#68D366"}
+  source: {foreground: "#40C6CF"}
 
 punctuation: {foreground: "#0C335A"}
 date: {foreground: "#F7AD2C"}
