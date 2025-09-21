@@ -90,14 +90,18 @@ omarchy-theme-set spark-omarchy
 
 **Post-Update Recovery**: If system updates remove the VSCode extension, simply run `./install-vscode.sh` again.
 
-## Background Recommendations
+## Included Backgrounds
 
-- **Corporate Landscapes**: Professional cityscapes or modern architecture
-- **Abstract Geometrics**: Clean patterns in Sparkfabrik colors
-- **Minimalist Tech**: Circuit boards or data visualization aesthetics
-- **Brand Elements**: Subtle Sparkfabrik logo patterns
+The theme comes with 4 professional wallpapers:
 
-**Pro Tip:** Use 4K wallpapers (3840x2160) for optimal display across all monitors.
+- **1-spark-corporate.png**: Bold red and blue corporate design (Default)
+- **2-spark-mountains.png**: Minimalist mountain landscape with Spark colors
+- **3-spark-abstract.png**: Abstract geometric patterns in brand colors
+- **4-spark-gradient.png**: Clean gradient design with corporate identity
+
+**Cycling Backgrounds:** Use `omarchy-theme-bg-next` to cycle through wallpapers.
+
+**Pro Tip:** All backgrounds are optimized at 3840x2160 (4K) for crisp display across all monitors.
 
 ## Contributing
 
