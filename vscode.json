@@ -1,4 +1,82 @@
 {
-  "name": "Catppuccin Macchiato",
-  "extension": "catppuccin.catppuccin-vsc"
+  "name": "Spark Omarchy",
+  "extension": "stefano-mainardi.spark-omarchy-theme",
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#031527",
+    "activityBar.foreground": "#FFFFFF",
+    "activityBar.activeBorder": "#EB0000",
+    "statusBar.background": "#0C335A",
+    "statusBar.foreground": "#FFFFFF",
+    "statusBar.noFolderBackground": "#031527",
+    "titleBar.activeBackground": "#031527",
+    "titleBar.activeForeground": "#FFFFFF",
+    "titleBar.inactiveBackground": "#0C335A",
+    "titleBar.inactiveForeground": "#FFFFFF",
+    "sideBar.background": "#031527",
+    "sideBar.foreground": "#FFFFFF",
+    "sideBar.border": "#0C335A",
+    "editor.background": "#031527",
+    "editor.foreground": "#FFFFFF",
+    "editor.selectionBackground": "#EB000050",
+    "editor.lineHighlightBackground": "#0C335A30",
+    "editorGroupHeader.tabsBackground": "#031527",
+    "tab.activeBackground": "#EB0000",
+    "tab.activeForeground": "#FFFFFF",
+    "tab.inactiveBackground": "#0C335A",
+    "tab.inactiveForeground": "#FFFFFF",
+    "panel.background": "#031527",
+    "panel.border": "#EB0000",
+    "terminal.background": "#031527",
+    "terminal.foreground": "#FFFFFF",
+    "focusBorder": "#EB0000",
+    "button.background": "#EB0000",
+    "button.foreground": "#FFFFFF",
+    "button.hoverBackground": "#F36931",
+    "input.background": "#0C335A",
+    "input.foreground": "#FFFFFF",
+    "input.border": "#EB0000",
+    "dropdown.background": "#0C335A",
+    "dropdown.foreground": "#FFFFFF",
+    "dropdown.border": "#EB0000"
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "keyword",
+        "settings": {
+          "foreground": "#EB0000"
+        }
+      },
+      {
+        "scope": "string",
+        "settings": {
+          "foreground": "#68D366"
+        }
+      },
+      {
+        "scope": "comment",
+        "settings": {
+          "foreground": "#027ACA"
+        }
+      },
+      {
+        "scope": "constant.numeric",
+        "settings": {
+          "foreground": "#F7AD2C"
+        }
+      },
+      {
+        "scope": "entity.name.function",
+        "settings": {
+          "foreground": "#40C6CF"
+        }
+      },
+      {
+        "scope": "variable",
+        "settings": {
+          "foreground": "#FFFFFF"
+        }
+      }
+    ]
+  }
 }

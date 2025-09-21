@@ -1,0 +1,46 @@
+{
+  "name": "spark-omarchy-theme",
+  "version": "1.0.0",
+  "displayName": "Spark Omarchy Theme",
+  "description": "⚡ Bold corporate theme featuring Sparkfabrik's design system with vibrant reds and professional blues",
+  "publisher": "stefano-mainardi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stefanomainardi/omarchy-sf-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stefanomainardi/omarchy-sf-theme/issues"
+  },
+  "engines": {
+    "vscode": "^1.13.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "spark",
+    "sparkfabrik",
+    "omarchy",
+    "dark",
+    "theme",
+    "color-theme",
+    "corporate",
+    "red",
+    "blue"
+  ],
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#031527",
+    "theme": "dark"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Spark Omarchy",
+        "uiTheme": "vs-dark",
+        "path": "./theme/spark-omarchy.json"
+      }
+    ]
+  }
+}
